@@ -28,7 +28,7 @@
             },
             "attrs": {
               "text": {
-                "text": "E-Commerce"
+                "text": "Public Website"
               },
               "body": {
                 "stroke": "#333333",
@@ -124,7 +124,7 @@
             "zIndex": 1,
             "data": {
               "type": "tm.Process",
-              "name": "E-Commerce",
+              "name": "Public Website",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -142,10 +142,13 @@
               "y": 393
             },
             "size": {
-              "width": 60,
-              "height": 60
+              "width": 120,
+              "height": 110
             },
             "attrs": {
+              "text": {
+                "text": "Payment Gateway"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -240,7 +243,7 @@
             "zIndex": 2,
             "data": {
               "type": "tm.Process",
-              "name": "Process",
+              "name": "Payment Gateway",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -531,6 +534,56 @@
               {
                 "x": 610,
                 "y": 250
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "d448fbe6-9444-4dd5-a3a9-9927fac2a2bf",
+            "source": {
+              "cell": "39ab5b2b-8fed-4b0d-93bd-498308421692",
+              "port": "7666d2a9-1703-428d-8a88-931e0fc5ad40"
+            },
+            "target": {
+              "cell": "3feff585-b15d-4a63-bde5-d9fea647648d",
+              "port": "477c5ee4-4bb2-4662-8d75-ccbee9d16ad3"
+            },
+            "vertices": [
+              {
+                "x": 600,
+                "y": 320
               }
             ]
           }

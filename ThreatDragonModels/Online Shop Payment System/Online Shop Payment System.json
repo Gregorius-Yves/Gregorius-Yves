@@ -373,8 +373,8 @@
           },
           {
             "position": {
-              "x": 460,
-              "y": 535
+              "x": 470,
+              "y": 530
             },
             "size": {
               "width": 112.5,
@@ -641,7 +641,7 @@
               },
               {
                 "x": 910,
-                "y": 610
+                "y": 580
               }
             ]
           },
@@ -823,17 +823,7 @@
                 "x": 980,
                 "y": 510
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "shape": "flow",
@@ -945,8 +935,8 @@
           },
           {
             "position": {
-              "x": 1000,
-              "y": 50
+              "x": 1270,
+              "y": 120
             },
             "size": {
               "width": 120,

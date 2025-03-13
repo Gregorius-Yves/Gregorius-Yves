@@ -586,6 +586,10 @@
             },
             "vertices": [
               {
+                "x": 930,
+                "y": 500
+              },
+              {
                 "x": 870,
                 "y": 500
               }
@@ -757,7 +761,7 @@
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
-              "isEncrypted": false,
+              "isEncrypted": true,
               "isPublicNetwork": false,
               "protocol": "",
               "threats": []
@@ -776,12 +780,12 @@
             },
             "vertices": [
               {
-                "x": 1060,
-                "y": 350
-              },
-              {
                 "x": 1070,
                 "y": 360
+              },
+              {
+                "x": 1100,
+                "y": 380
               }
             ]
           },
@@ -870,8 +874,62 @@
             },
             "vertices": [
               {
-                "x": 890,
+                "x": 880,
                 "y": 80
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Response",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Response"
+            ],
+            "id": "0f4711c4-ed6f-45ac-8e43-33f86733bd62",
+            "source": {
+              "cell": "a2b39bc2-508b-466d-8857-d99d7ebe2d88",
+              "port": "ec40bd7f-060a-40f7-8632-11ca7bb44009"
+            },
+            "target": {
+              "cell": "39ab5b2b-8fed-4b0d-93bd-498308421692",
+              "port": "49eb15aa-be45-4193-8abd-4a14f1f91fef"
+            },
+            "vertices": [
+              {
+                "x": 1050,
+                "y": 170
+              },
+              {
+                "x": 1030,
+                "y": 170
               }
             ]
           },
@@ -924,8 +982,8 @@
                 "y": 320
               },
               {
-                "x": 1120,
-                "y": 270
+                "x": 1150,
+                "y": 290
               },
               {
                 "x": 1010,
@@ -1055,60 +1113,6 @@
               "storesInventory": false,
               "threats": []
             }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 13,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Response",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Response"
-            ],
-            "id": "d58a5215-9d7a-4bfd-9fb6-f95e4c855120",
-            "source": {
-              "cell": "39ab5b2b-8fed-4b0d-93bd-498308421692",
-              "port": "49eb15aa-be45-4193-8abd-4a14f1f91fef"
-            },
-            "target": {
-              "cell": "a2b39bc2-508b-466d-8857-d99d7ebe2d88",
-              "port": "ec40bd7f-060a-40f7-8632-11ca7bb44009"
-            },
-            "vertices": [
-              {
-                "x": 960,
-                "y": 160
-              },
-              {
-                "x": 1000,
-                "y": 130
-              }
-            ]
           }
         ],
         "description": "A map of threats"

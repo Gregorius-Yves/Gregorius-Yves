@@ -368,7 +368,25 @@
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "c82d4399-8e98-46b1-92fa-46b4b8898689",
+                  "title": "Credential Theft (Phishing, Brute Force)",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Attackers attempt to steal login credentials via phishing or brute-force login attempts\n",
+                  "mitigation": "Use MFA, rate limiting, and CAPTCHA on login attempts\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -516,7 +534,26 @@
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "cb38700e-eec7-411d-b24a-cb3a88b3d63b",
+                  "title": "Man-in-the-Middle (MitM) Attack",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Attackers intercept and alter HTTP requests or responses to steal user credentials or modify transactions\n",
+                  "mitigation": "Enforce TLS (HTTPS), use HSTS, and implement end-to-end encryption\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "HTTP Response"
@@ -531,10 +568,6 @@
               "port": "477c5ee4-4bb2-4662-8d75-ccbee9d16ad3"
             },
             "vertices": [
-              {
-                "x": 650,
-                "y": 270
-              },
               {
                 "x": 540,
                 "y": 270
@@ -678,7 +711,26 @@
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "d496b897-35df-4039-9b2e-b48e86563f18",
+                  "title": "Man-in-the-Middle (MitM) Attack",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Attackers intercept and alter HTTP requests or responses to steal user credentials or modify transactions\n",
+                  "mitigation": "Enforce TLS (HTTPS), use HSTS, and implement end-to-end encryption\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "HTTP Request"
@@ -694,234 +746,14 @@
             },
             "vertices": [
               {
-                "x": 550,
-                "y": 205
+                "x": 560,
+                "y": 180
               },
               {
                 "x": 570,
-                "y": 205
+                "y": 180
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "shape": "trust-boundary-curve",
@@ -1047,7 +879,32 @@
                 "x": 980,
                 "y": 510
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -1096,6 +953,14 @@
               {
                 "x": 880,
                 "y": 80
+              },
+              {
+                "x": 950,
+                "y": 80
+              },
+              {
+                "x": 1020,
+                "y": 100
               }
             ]
           },
@@ -1213,8 +1078,8 @@
           },
           {
             "position": {
-              "x": 1270,
-              "y": 120
+              "x": 1260,
+              "y": 130
             },
             "size": {
               "width": 120,
@@ -1340,6 +1205,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "Cyber Security Engineer",
-    "threatTop": 0
+    "threatTop": 3
   }
 }

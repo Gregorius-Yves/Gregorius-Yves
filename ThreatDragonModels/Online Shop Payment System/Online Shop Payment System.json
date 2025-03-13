@@ -640,10 +640,6 @@
             },
             "vertices": [
               {
-                "x": 620,
-                "y": 565
-              },
-              {
                 "x": 660,
                 "y": 580
               },
@@ -651,7 +647,17 @@
                 "x": 900,
                 "y": 580
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -711,13 +717,13 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Web Service",
+              "name": "Public Web Service",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
             "labels": [
-              "Web Service"
+              "Public Web Service"
             ],
             "id": "36ec53b3-a919-4022-b7c6-eada8b9e37cf",
             "source": {
@@ -737,17 +743,7 @@
                 "x": 540,
                 "y": 350
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "shape": "trust-boundary-curve",
@@ -757,13 +753,13 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Trust Boundary",
+              "name": "Encrypred Network",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
             "labels": [
-              "Trust Boundary"
+              "Encrypred Network"
             ],
             "id": "860f494d-872a-4187-b42b-8d339867d820",
             "source": {
@@ -780,12 +776,12 @@
                 "y": 330
               },
               {
-                "x": 1230,
-                "y": 280
+                "x": 1280,
+                "y": 250
               },
               {
-                "x": 1060,
-                "y": 360
+                "x": 1000,
+                "y": 320
               }
             ]
           },

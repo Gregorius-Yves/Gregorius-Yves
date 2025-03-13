@@ -793,13 +793,13 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Encrypted Network",
+              "name": "Private Network",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
             },
             "labels": [
-              "Encrypted Network"
+              "Private Network"
             ],
             "id": "860f494d-872a-4187-b42b-8d339867d820",
             "source": {
@@ -823,7 +823,17 @@
                 "x": 980,
                 "y": 510
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",

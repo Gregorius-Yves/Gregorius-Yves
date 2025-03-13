@@ -1,0 +1,16 @@
+{
+  "version": "2.4.1",
+  "summary": {
+    "title": "Online Shop Payment System",
+    "owner": "Yves",
+    "description": "This threat model represents the data flow and security risks within an online shop's payment system. It captures interactions between users, the e-commerce platform, a payment gateway, and financial institutions.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "Yves",
+    "threatTop": 0
+  }
+}

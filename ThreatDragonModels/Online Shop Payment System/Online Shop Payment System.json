@@ -586,12 +586,8 @@
             },
             "vertices": [
               {
-                "x": 790,
-                "y": 423
-              },
-              {
-                "x": 590,
-                "y": 470
+                "x": 870,
+                "y": 500
               }
             ]
           },
@@ -644,8 +640,8 @@
                 "y": 580
               },
               {
-                "x": 900,
-                "y": 580
+                "x": 910,
+                "y": 610
               }
             ]
           },
@@ -857,7 +853,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Request",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -869,7 +865,7 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "Request"
             ],
             "id": "de05d4ce-e3a7-46cf-9247-bba1777c87b6",
             "source": {
@@ -969,6 +965,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1052,7 +1049,6 @@
               ]
             },
             "id": "a2b39bc2-508b-466d-8857-d99d7ebe2d88",
-            "zIndex": 12,
             "data": {
               "type": "tm.Store",
               "name": "Item Database",
@@ -1088,7 +1084,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Response",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1100,7 +1096,7 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "Response"
             ],
             "id": "d58a5215-9d7a-4bfd-9fb6-f95e4c855120",
             "source": {
@@ -1117,8 +1113,8 @@
                 "y": 160
               },
               {
-                "x": 1030,
-                "y": 180
+                "x": 1000,
+                "y": 130
               }
             ]
           }

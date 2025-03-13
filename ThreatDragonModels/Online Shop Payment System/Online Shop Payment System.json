@@ -603,7 +603,26 @@
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "9749e9ec-9d48-4d15-9029-378ead45095e",
+                  "title": "Spoofed Transaction Validation Requests",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Attackers forge validation requests to trick the bank into approving unauthorized transactions\n",
+                  "mitigation": "Implement nonce-based request validation, mutual TLS authentication, and rate limiting.\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Validate Request"
@@ -657,7 +676,26 @@
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "e0531186-1ae1-4778-abbe-b9eb4cc80cd3",
+                  "title": "Spoofed Transaction Validation Requests",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Attackers forge validation requests to trick the bank into approving unauthorized transactions\n",
+                  "mitigation": "Implement nonce-based request validation, mutual TLS authentication, and rate limiting.\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Validate Response"
@@ -677,8 +715,12 @@
                 "y": 580
               },
               {
-                "x": 910,
-                "y": 580
+                "x": 890,
+                "y": 620
+              },
+              {
+                "x": 960,
+                "y": 620
               }
             ]
           },
@@ -816,7 +858,26 @@
               "isEncrypted": true,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "11932c49-c480-4810-9a91-8b32ba3dfe97",
+                  "title": " Payment Tampering",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Attackers alter payment requests in transit to redirect payments or modify transaction amounts\n",
+                  "mitigation": "Use digital signatures, HMAC for message integrity, and mutual authentication\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Transaction Request"
@@ -834,6 +895,10 @@
               {
                 "x": 1070,
                 "y": 360
+              },
+              {
+                "x": 1070,
+                "y": 380
               },
               {
                 "x": 1100,
@@ -879,32 +944,7 @@
                 "x": 980,
                 "y": 510
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "shape": "flow",
@@ -935,7 +975,26 @@
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "ced06363-7255-4c6f-8e92-99b1b8646744",
+                  "title": " SQL Injection",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Attackers inject malicious SQL queries to extract or modify stored product and pricing data\n",
+                  "mitigation": "Use prepared statements, ORMs, and WAF rules to filter SQL injection attempts\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Request"
@@ -1047,7 +1106,26 @@
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "a2a97c2f-ad72-480f-8530-72b39c85b04c",
+                  "title": " Payment Tampering",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Attackers alter payment requests in transit to redirect payments or modify transaction amounts\n",
+                  "mitigation": "Use digital signatures, HMAC for message integrity, and mutual authentication\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Transaction Response"
@@ -1205,6 +1283,6 @@
     ],
     "diagramTop": 3,
     "reviewer": "Cyber Security Engineer",
-    "threatTop": 3
+    "threatTop": 8
   }
 }

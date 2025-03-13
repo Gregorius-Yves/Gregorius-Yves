@@ -373,8 +373,8 @@
           },
           {
             "position": {
-              "x": 390,
-              "y": 510
+              "x": 460,
+              "y": 535
             },
             "size": {
               "width": 112.5,
@@ -640,16 +640,16 @@
             },
             "vertices": [
               {
-                "x": 600,
-                "y": 540
+                "x": 620,
+                "y": 565
               },
               {
-                "x": 700,
-                "y": 530
+                "x": 660,
+                "y": 580
               },
               {
-                "x": 770,
-                "y": 490
+                "x": 900,
+                "y": 580
               }
             ]
           },
@@ -737,7 +737,17 @@
                 "x": 540,
                 "y": 350
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "trust-boundary-curve",

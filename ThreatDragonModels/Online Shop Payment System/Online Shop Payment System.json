@@ -719,7 +719,7 @@
               "threats": []
             },
             "labels": [
-              "Validated Request"
+              "Validated Requ"
             ],
             "id": "968d9558-ed3b-4296-ba46-2707c4e544a9",
             "source": {
@@ -732,7 +732,7 @@
             },
             "vertices": [
               {
-                "x": 540,
+                "x": 560,
                 "y": 490
               }
             ]
@@ -757,7 +757,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Validated Response",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -769,17 +769,23 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "Validated Response"
             ],
-            "id": "a8d5c644-4761-44e8-a4a6-9ae023a926e3",
+            "id": "700c090f-242d-4fef-b017-7c062f5b3412",
             "source": {
-              "x": 455,
-              "y": 393
+              "cell": "61c333b6-e314-4372-ab1d-fd18524f3d88",
+              "port": "7666d2a9-1703-428d-8a88-931e0fc5ad40"
             },
             "target": {
-              "x": 555,
-              "y": 493
-            }
+              "cell": "6fb39cc9-0388-42ee-aa1c-23dcfe9e8308",
+              "port": "477c5ee4-4bb2-4662-8d75-ccbee9d16ad3"
+            },
+            "vertices": [
+              {
+                "x": 560,
+                "y": 423
+              }
+            ]
           }
         ],
         "description": "A map of threats"

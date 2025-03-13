@@ -647,17 +647,7 @@
                 "x": 900,
                 "y": 580
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "shape": "flow",
@@ -746,46 +736,6 @@
             ]
           },
           {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Encrypred Network",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "labels": [
-              "Encrypred Network"
-            ],
-            "id": "860f494d-872a-4187-b42b-8d339867d820",
-            "source": {
-              "x": 1264,
-              "y": 80
-            },
-            "target": {
-              "x": 1000,
-              "y": 600
-            },
-            "vertices": [
-              {
-                "x": 1470,
-                "y": 330
-              },
-              {
-                "x": 1280,
-                "y": 250
-              },
-              {
-                "x": 1000,
-                "y": 320
-              }
-            ]
-          },
-          {
             "shape": "flow",
             "attrs": {
               "line": {
@@ -836,6 +786,104 @@
               {
                 "x": 1070,
                 "y": 360
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Encrypred Network",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Encrypred Network"
+            ],
+            "id": "860f494d-872a-4187-b42b-8d339867d820",
+            "source": {
+              "x": 1264,
+              "y": 80
+            },
+            "target": {
+              "x": 1000,
+              "y": 710
+            },
+            "vertices": [
+              {
+                "x": 1470,
+                "y": 330
+              },
+              {
+                "x": 1450,
+                "y": 330
+              },
+              {
+                "x": 1280,
+                "y": 250
+              },
+              {
+                "x": 1000,
+                "y": 320
+              },
+              {
+                "x": 980,
+                "y": 510
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "de05d4ce-e3a7-46cf-9247-bba1777c87b6",
+            "source": {
+              "cell": "39ab5b2b-8fed-4b0d-93bd-498308421692",
+              "port": "49eb15aa-be45-4193-8abd-4a14f1f91fef"
+            },
+            "target": {
+              "cell": "a2b39bc2-508b-466d-8857-d99d7ebe2d88",
+              "port": "ec40bd7f-060a-40f7-8632-11ca7bb44009"
+            },
+            "vertices": [
+              {
+                "x": 890,
+                "y": 80
               }
             ]
           },
@@ -894,6 +942,183 @@
               {
                 "x": 1010,
                 "y": 205
+              }
+            ]
+          },
+          {
+            "position": {
+              "x": 1000,
+              "y": 50
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Item Database"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "228d19e5-e915-43cf-ab28-fd2852f30898"
+                },
+                {
+                  "group": "right",
+                  "id": "87f4c63b-3ae6-4f74-8897-af5f1911dc49"
+                },
+                {
+                  "group": "bottom",
+                  "id": "69b621c0-0ba1-44c8-ad4b-6c4fceb8b278"
+                },
+                {
+                  "group": "left",
+                  "id": "ec40bd7f-060a-40f7-8632-11ca7bb44009"
+                }
+              ]
+            },
+            "id": "a2b39bc2-508b-466d-8857-d99d7ebe2d88",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Store",
+              "name": "Item Database",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 13,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "d58a5215-9d7a-4bfd-9fb6-f95e4c855120",
+            "source": {
+              "cell": "39ab5b2b-8fed-4b0d-93bd-498308421692",
+              "port": "49eb15aa-be45-4193-8abd-4a14f1f91fef"
+            },
+            "target": {
+              "cell": "a2b39bc2-508b-466d-8857-d99d7ebe2d88",
+              "port": "ec40bd7f-060a-40f7-8632-11ca7bb44009"
+            },
+            "vertices": [
+              {
+                "x": 960,
+                "y": 160
+              },
+              {
+                "x": 1030,
+                "y": 180
               }
             ]
           }

@@ -766,6 +766,10 @@
                 "y": 330
               },
               {
+                "x": 1230,
+                "y": 280
+              },
+              {
                 "x": 1060,
                 "y": 360
               }
@@ -816,12 +820,31 @@
             },
             "vertices": [
               {
+                "x": 1060,
+                "y": 350
+              },
+              {
                 "x": 1070,
                 "y": 360
               }
             ],
             "tools": {
               "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
                 "boundary",
                 "button-remove",
                 "vertices",

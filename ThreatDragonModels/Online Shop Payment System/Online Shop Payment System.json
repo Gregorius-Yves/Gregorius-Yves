@@ -19,7 +19,7 @@
         "cells": [
           {
             "position": {
-              "x": 910,
+              "x": 950,
               "y": 140
             },
             "size": {
@@ -138,8 +138,8 @@
           },
           {
             "position": {
-              "x": 990,
-              "y": 440
+              "x": 1080,
+              "y": 430
             },
             "size": {
               "width": 120,
@@ -582,6 +582,10 @@
             },
             "vertices": [
               {
+                "x": 650,
+                "y": 270
+              },
+              {
                 "x": 620,
                 "y": 270
               },
@@ -589,107 +593,97 @@
                 "x": 540,
                 "y": 270
               }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Payment Authentication",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Payment Authentication"
             ],
-            "id": "eb8b9c06-8efd-4e47-9fec-c4945b055947",
-            "source": {
-              "cell": "3feff585-b15d-4a63-bde5-d9fea647648d",
-              "port": "477c5ee4-4bb2-4662-8d75-ccbee9d16ad3"
-            },
-            "target": {
-              "cell": "61c333b6-e314-4372-ab1d-fd18524f3d88",
-              "port": "7666d2a9-1703-428d-8a88-931e0fc5ad40"
-            },
-            "vertices": [
-              {
-                "x": 600,
-                "y": 320
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Payment Approval/Rejection",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Payment Approval/Rejection"
-            ],
-            "id": "28fb8dfc-1c96-46c1-a5c3-047c4b1cdd94",
-            "source": {
-              "cell": "61c333b6-e314-4372-ab1d-fd18524f3d88",
-              "port": "7666d2a9-1703-428d-8a88-931e0fc5ad40"
-            },
-            "target": {
-              "cell": "3feff585-b15d-4a63-bde5-d9fea647648d",
-              "port": "477c5ee4-4bb2-4662-8d75-ccbee9d16ad3"
-            },
-            "vertices": [
-              {
-                "x": 500,
-                "y": 330
-              }
-            ]
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -790,12 +784,112 @@
                 "y": 448
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Transaction Request",
+              "description": "Sends details of transaction (User Account, Payment Details, etc)",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Transaction Request"
+            ],
+            "id": "b5f2af60-cfb3-4d1d-974f-4e9d4ab137fd",
+            "source": {
+              "cell": "39ab5b2b-8fed-4b0d-93bd-498308421692",
+              "port": "de1f3e26-f9b5-4e9d-9b78-b1ad522dc165"
+            },
+            "target": {
+              "cell": "61c333b6-e314-4372-ab1d-fd18524f3d88",
+              "port": "49eb15aa-be45-4193-8abd-4a14f1f91fef"
+            },
+            "vertices": [
+              {
+                "x": 1070,
+                "y": 360
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "79bec905-c92d-4947-9480-28ffa2e42f6e",
+            "source": {
+              "cell": "61c333b6-e314-4372-ab1d-fd18524f3d88",
+              "port": "49eb15aa-be45-4193-8abd-4a14f1f91fef"
+            },
+            "target": {
+              "cell": "39ab5b2b-8fed-4b0d-93bd-498308421692",
+              "port": "de1f3e26-f9b5-4e9d-9b78-b1ad522dc165"
+            },
+            "vertices": [
+              {
+                "x": 1190,
+                "y": 320
+              }
+            ]
           }
         ],
         "description": "A map of threats"
       }
     ],
-    "diagramTop": 1,
+    "diagramTop": 3,
     "reviewer": "Cyber Security Engineer",
     "threatTop": 0
   }

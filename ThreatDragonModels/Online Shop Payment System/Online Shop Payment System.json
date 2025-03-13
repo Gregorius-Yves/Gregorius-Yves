@@ -507,60 +507,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Order Product",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Order Product"
-            ],
-            "id": "68fbe037-1e1a-44fa-8190-01df54cf4d6e",
-            "source": {
-              "cell": "3feff585-b15d-4a63-bde5-d9fea647648d",
-              "port": "477c5ee4-4bb2-4662-8d75-ccbee9d16ad3"
-            },
-            "target": {
-              "cell": "39ab5b2b-8fed-4b0d-93bd-498308421692",
-              "port": "7666d2a9-1703-428d-8a88-931e0fc5ad40"
-            },
-            "vertices": [
-              {
-                "x": 610,
-                "y": 220
-              },
-              {
-                "x": 720,
-                "y": 220
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "HTTP Response",
               "description": "Confirmation/Update Status/Payment Option",
               "outOfScope": false,
@@ -792,6 +738,60 @@
               {
                 "x": 1190,
                 "y": 320
+              },
+              {
+                "x": 1170,
+                "y": 320
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTP Request",
+              "description": "Payment Method, Other Necessary Details",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "HTTP Request"
+            ],
+            "id": "e9311869-fde3-4535-9e66-1172d736e131",
+            "source": {
+              "cell": "3feff585-b15d-4a63-bde5-d9fea647648d",
+              "port": "477c5ee4-4bb2-4662-8d75-ccbee9d16ad3"
+            },
+            "target": {
+              "cell": "39ab5b2b-8fed-4b0d-93bd-498308421692",
+              "port": "7666d2a9-1703-428d-8a88-931e0fc5ad40"
+            },
+            "vertices": [
+              {
+                "x": 640,
+                "y": 205
               }
             ]
           }

@@ -371,7 +371,7 @@
           {
             "position": {
               "x": 490,
-              "y": 190
+              "y": 212
             },
             "size": {
               "width": 90,
@@ -489,8 +489,8 @@
           },
           {
             "position": {
-              "x": 668,
-              "y": 360
+              "x": 638,
+              "y": 320
             },
             "size": {
               "width": 60,
@@ -608,8 +608,8 @@
           },
           {
             "position": {
-              "x": 668,
-              "y": 506
+              "x": 360,
+              "y": 330
             },
             "size": {
               "width": 60,
@@ -727,8 +727,8 @@
           },
           {
             "position": {
-              "x": 505,
-              "y": 436
+              "x": 628,
+              "y": 496
             },
             "size": {
               "width": 60,
@@ -846,8 +846,8 @@
           },
           {
             "position": {
-              "x": 1300,
-              "y": 446
+              "x": 1430,
+              "y": 470
             },
             "size": {
               "width": 120,
@@ -1088,8 +1088,8 @@
           },
           {
             "position": {
-              "x": 1320,
-              "y": 60
+              "x": 1400,
+              "y": 50
             },
             "size": {
               "width": 120,
@@ -1640,7 +1640,7 @@
               "threats": []
             },
             "labels": [
-              "Permintaan Pembayaran"
+              "Data Flow"
             ],
             "id": "71f14d9c-416a-4446-8395-37beea71a287",
             "source": {
@@ -1858,9 +1858,207 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Update Produk",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Update Produk"
+            ],
+            "id": "927d15e6-2454-4762-b8b5-61e7ce5b9594",
+            "source": {
+              "cell": "177f9813-723b-4134-9d14-9656552e6d2e",
+              "port": "a2c7410e-7152-4683-874c-f6d4e8e9dd2c"
+            },
+            "target": {
+              "cell": "1306d987-bde6-4971-bb44-78cb58b60cee",
+              "port": "60a0cc3d-a788-4986-9eb9-ad0cc00b4bb6"
+            },
+            "vertices": [
+              {
+                "x": 790,
+                "y": 526
+              },
+              {
+                "x": 1000,
+                "y": 500
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Laporan Penjualan",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Laporan Penjualan"
+            ],
+            "id": "6f7d6fac-826d-4e95-84c3-61e5224e1c3f",
+            "source": {
+              "cell": "1306d987-bde6-4971-bb44-78cb58b60cee",
+              "port": "60a0cc3d-a788-4986-9eb9-ad0cc00b4bb6"
+            },
+            "target": {
+              "cell": "177f9813-723b-4134-9d14-9656552e6d2e",
+              "port": "a2c7410e-7152-4683-874c-f6d4e8e9dd2c"
+            },
+            "vertices": [
+              {
+                "x": 1040,
+                "y": 526
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Ulasan/Chat",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Ulasan/Chat"
+            ],
+            "id": "a075d016-79b0-4662-ad67-130f0ea99e6a",
+            "source": {
+              "cell": "03666ee8-c1e0-473c-9899-c12a285c9825",
+              "port": "59ff9bdf-4826-427d-b4c7-2a437bc8bc9b"
+            },
+            "target": {
+              "cell": "a85f688b-b4ae-4542-ae78-43a0abe8b95c",
+              "port": "2e977317-0ab1-4c51-9d7d-8cab350e3667"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Balasan/Respon CS",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Balasan/Respon CS"
+            ],
+            "id": "da71f9a2-a67d-4372-a0ab-58ad2c4692cb",
+            "source": {
+              "cell": "a85f688b-b4ae-4542-ae78-43a0abe8b95c",
+              "port": "2e977317-0ab1-4c51-9d7d-8cab350e3667"
+            },
+            "target": {
+              "cell": "03666ee8-c1e0-473c-9899-c12a285c9825",
+              "port": "59ff9bdf-4826-427d-b4c7-2a437bc8bc9b"
+            },
+            "vertices": [
+              {
+                "x": 150,
+                "y": 300
+              }
+            ]
+          },
+          {
             "position": {
-              "x": 1310,
-              "y": 180
+              "x": 1400,
+              "y": 170
             },
             "size": {
               "width": 120,
@@ -2101,8 +2299,8 @@
           },
           {
             "position": {
-              "x": 1150,
-              "y": 330
+              "x": 1130,
+              "y": 290
             },
             "size": {
               "width": 112.5,
@@ -2262,6 +2460,56 @@
               {
                 "x": 810,
                 "y": 120
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 15,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "11e5f1ad-8c38-4cc9-bedb-e7d701fa3c83",
+            "source": {
+              "x": 410,
+              "y": 360
+            },
+            "target": {
+              "x": 590,
+              "y": 460
+            },
+            "vertices": [
+              {
+                "x": 660,
+                "y": 430
               }
             ]
           }

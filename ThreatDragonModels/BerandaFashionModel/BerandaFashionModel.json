@@ -1323,7 +1323,7 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1343,7 +1343,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
@@ -1352,7 +1352,7 @@
                 {
                   "id": "cfdb562b-89d8-48bd-8a78-95a0f3d82d14",
                   "title": "New STRIDE threat",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "High",
                   "type": "Tampering",
                   "description": "Credential theft (phishing, keylogging)",
@@ -1364,7 +1364,7 @@
                 }
               ],
               "threatFrequency": {
-                "tampering": 1,
+                "tampering": 2,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
@@ -1384,10 +1384,6 @@
             "vertices": [
               {
                 "x": 240,
-                "y": 120
-              },
-              {
-                "x": 260,
                 "y": 120
               },
               {
@@ -1575,7 +1571,26 @@
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "e15cf9d6-5796-4fff-984a-9a16c353c7c4",
+                  "title": "Spoofing",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Impersonating admin or exploiting login",
+                  "mitigation": "Admin MFA, IP-based restriction",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Kredensial Admin"
@@ -1591,10 +1606,20 @@
             },
             "vertices": [
               {
-                "x": 380,
+                "x": 420,
                 "y": 440
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -2784,6 +2809,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Cyber Security Engineer`",
-    "threatTop": 16
+    "threatTop": 17
   }
 }

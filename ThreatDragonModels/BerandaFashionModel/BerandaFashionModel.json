@@ -735,7 +735,29 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "0995ca72-baf0-4eeb-a630-f89cc75dc746",
+                  "title": "Data Leak",
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "type": "Information disclosure",
+                  "description": "Chat history exposed",
+                  "mitigation": "Tokenized access, encrypted storage",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -977,13 +999,33 @@
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "ff7e324e-ee40-43ec-a742-ba2603359d70",
+                  "title": "Data Leak",
+                  "status": "Mitigated",
+                  "severity": "Critical",
+                  "type": "Tampering",
+                  "description": "Price or stock info modified",
+                  "mitigation": "Admin verification, logging, audit trails",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           },
           {
             "position": {
-              "x": 808,
-              "y": 207
+              "x": 768,
+              "y": 190.00000000000003
             },
             "size": {
               "width": 80,
@@ -994,8 +1036,8 @@
                 "text": "Payment \nGateway"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -1091,7 +1133,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -1113,7 +1155,7 @@
                 {
                   "id": "4918f9d2-75e0-4e5e-a578-d7b65fe0d46e",
                   "title": "Interception",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Tampering",
                   "description": "Altered payment details",
@@ -1126,7 +1168,7 @@
               ],
               "threatFrequency": {
                 "spoofing": 1,
-                "tampering": 1,
+                "tampering": 2,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
@@ -1254,21 +1296,34 @@
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
+              "threats": [
+                {
+                  "id": "2687e1ee-3868-4320-ac97-ad08a3c18209",
+                  "title": "Data Leak",
+                  "status": "Mitigated",
+                  "severity": "Critical",
+                  "type": "Information disclosure",
+                  "description": "Leak Of Data",
+                  "mitigation": "Encryption at rest, RBAC",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                }
               ],
-              "name": null
+              "threatFrequency": {
+                "tampering": 2,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             }
           },
           {
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1288,12 +1343,31 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "cfdb562b-89d8-48bd-8a78-95a0f3d82d14",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Credential theft (phishing, keylogging)",
+                  "mitigation": "TLS, CAPTCHA, rate-limiting, MFA",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Kredensial"
@@ -1308,6 +1382,14 @@
               "port": "b8149ffe-773e-4379-80de-b161247102b9"
             },
             "vertices": [
+              {
+                "x": 240,
+                "y": 120
+              },
+              {
+                "x": 260,
+                "y": 120
+              },
               {
                 "x": 360,
                 "y": 100
@@ -1658,8 +1740,8 @@
             },
             "vertices": [
               {
-                "x": 690,
-                "y": 220
+                "x": 650,
+                "y": 200
               }
             ]
           },
@@ -1708,58 +1790,8 @@
             },
             "vertices": [
               {
-                "x": 690,
-                "y": 270
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Simpan Data Transaksi",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Simpan Data Transaksi"
-            ],
-            "id": "34301f62-3c9d-4f3d-8535-a86d5d2e2e97",
-            "source": {
-              "cell": "cc60c85d-caf8-4847-b556-e3094b871971",
-              "port": "289ff83a-ca8d-4c4a-bdc4-f430f36cf30a"
-            },
-            "target": {
-              "cell": "6b3b0d44-d676-49de-aec1-be4359ac5c17",
-              "port": "60a0cc3d-a788-4986-9eb9-ad0cc00b4bb6"
-            },
-            "vertices": [
-              {
-                "x": 1030,
-                "y": 210
+                "x": 650,
+                "y": 250
               }
             ]
           },
@@ -1808,8 +1840,8 @@
             },
             "vertices": [
               {
-                "x": 920,
-                "y": 290
+                "x": 880,
+                "y": 270
               }
             ]
           },
@@ -1917,8 +1949,8 @@
             },
             "vertices": [
               {
-                "x": 848,
-                "y": 360
+                "x": 808,
+                "y": 340
               }
             ]
           },
@@ -2225,8 +2257,58 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Simpan Data Transaksi",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Simpan Data Transaksi"
+            ],
+            "id": "34301f62-3c9d-4f3d-8535-a86d5d2e2e97",
+            "source": {
+              "cell": "cc60c85d-caf8-4847-b556-e3094b871971",
+              "port": "289ff83a-ca8d-4c4a-bdc4-f430f36cf30a"
+            },
+            "target": {
+              "cell": "6b3b0d44-d676-49de-aec1-be4359ac5c17",
+              "port": "60a0cc3d-a788-4986-9eb9-ad0cc00b4bb6"
+            },
+            "vertices": [
+              {
+                "x": 1020,
+                "y": 190
+              }
+            ]
+          },
+          {
             "position": {
-              "x": 1460,
+              "x": 1490,
               "y": 190.00000000000003
             },
             "size": {
@@ -2344,7 +2426,27 @@
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "9c65aea3-a35e-4988-a56b-c5d8684a3225",
+                  "title": "Data Leak",
+                  "status": "Mitigated",
+                  "severity": "Critical",
+                  "type": "Tampering",
+                  "description": "Order history or transaction records changed",
+                  "mitigation": "Immutable logs, DB integrity checks",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -2682,6 +2784,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Cyber Security Engineer`",
-    "threatTop": 11
+    "threatTop": 16
   }
 }

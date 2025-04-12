@@ -61,7 +61,7 @@
               ]
             }
           },
-          // Processes
+  
           {
             "position": { "x": 500, "y": 150 },
             "size": { "width": 150, "height": 100 },
@@ -106,7 +106,7 @@
               ]
             }
           },
-          // Data Stores
+        
           {
             "position": { "x": 800, "y": 150 },
             "size": { "width": 120, "height": 60 },

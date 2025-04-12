@@ -31,8 +31,8 @@
                 "text": "Login \n&\n Auth"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -128,7 +128,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -150,7 +150,7 @@
                 {
                   "id": "7ad6a353-8b2b-4f57-9a59-fd3afffe63d0",
                   "title": "Access Control Hijack",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "High",
                   "type": "Tampering",
                   "description": "Credential injection, brute force",
@@ -159,23 +159,29 @@
                   "new": false,
                   "number": 6,
                   "score": ""
+                },
+                {
+                  "id": "dc06e131-4323-4aa8-898f-2b4a887182ca",
+                  "title": "SQL Injection",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Attack consists of insertion or “injection” of a SQL query via the input data from the client to the application.",
+                  "mitigation": "Stored procedures, Input validation and Sanitization",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 1,
+                "tampering": 3,
                 "repudiation": 0,
                 "informationDisclosure": 1,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -575,7 +581,42 @@
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "ce4a63bf-29cd-432d-9924-ff6cd1119fe4",
+                  "title": "Web Parameter Tampering",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Manipulated item prices during checkout",
+                  "mitigation": "Server-side validation, HMAC signatures",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                },
+                {
+                  "id": "b99304c3-1e09-44d1-96e2-fc836999f536",
+                  "title": "Repudiation",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Deny transaction",
+                  "mitigation": "Proof of payment, secure logs",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -941,8 +982,8 @@
           },
           {
             "position": {
-              "x": 818,
-              "y": 190.00000000000003
+              "x": 808,
+              "y": 207
             },
             "size": {
               "width": 80,
@@ -953,8 +994,8 @@
                 "text": "Payment \nGateway"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1050,12 +1091,47 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "8870de65-0568-4fc9-a9b4-02188158aa2f",
+                  "title": "Payment Gateway Spoofing",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Fake gateway response",
+                  "mitigation": "API key validation, mutual TLS",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                },
+                {
+                  "id": "4918f9d2-75e0-4e5e-a578-d7b65fe0d46e",
+                  "title": "Interception",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Altered payment details",
+                  "mitigation": "HMAC, encrypted messages",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -1179,6 +1255,13 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1575,8 +1658,8 @@
             },
             "vertices": [
               {
-                "x": 700,
-                "y": 210
+                "x": 690,
+                "y": 220
               }
             ]
           },
@@ -1625,8 +1708,8 @@
             },
             "vertices": [
               {
-                "x": 700,
-                "y": 260
+                "x": 690,
+                "y": 270
               }
             ]
           },
@@ -1675,8 +1758,8 @@
             },
             "vertices": [
               {
-                "x": 1040,
-                "y": 200
+                "x": 1030,
+                "y": 210
               }
             ]
           },
@@ -1725,8 +1808,8 @@
             },
             "vertices": [
               {
-                "x": 930,
-                "y": 280
+                "x": 920,
+                "y": 290
               }
             ]
           },
@@ -1777,7 +1860,17 @@
                 "x": 1090,
                 "y": 360
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -1824,8 +1917,8 @@
             },
             "vertices": [
               {
-                "x": 858,
-                "y": 350
+                "x": 848,
+                "y": 360
               }
             ]
           },
@@ -2589,6 +2682,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Cyber Security Engineer`",
-    "threatTop": 6
+    "threatTop": 11
   }
 }

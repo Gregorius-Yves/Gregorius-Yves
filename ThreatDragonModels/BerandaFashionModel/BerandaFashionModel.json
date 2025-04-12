@@ -846,8 +846,8 @@
           },
           {
             "position": {
-              "x": 1080,
-              "y": 436
+              "x": 1200,
+              "y": 476
             },
             "size": {
               "width": 120,
@@ -969,16 +969,16 @@
           },
           {
             "position": {
-              "x": 678,
-              "y": 200
+              "x": 818,
+              "y": 190.00000000000003
             },
             "size": {
-              "width": 60,
-              "height": 60
+              "width": 80,
+              "height": 90
             },
             "attrs": {
               "text": {
-                "text": "Payment Gateway"
+                "text": "Payment \nGateway"
               },
               "body": {
                 "stroke": "#333333",
@@ -1074,7 +1074,7 @@
             "id": "cc60c85d-caf8-4847-b556-e3094b871971",
             "data": {
               "type": "tm.Process",
-              "name": "Payment Gateway",
+              "name": "Payment \nGateway",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1088,7 +1088,7 @@
           },
           {
             "position": {
-              "x": 1070,
+              "x": 1200,
               "y": 65
             },
             "size": {
@@ -1560,9 +1560,108 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Permintaan Pembayaran",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Permintaan Pembayaran"
+            ],
+            "id": "5fa55b12-e41d-43e4-82a3-1fef76bbbc27",
+            "source": {
+              "cell": "00fd6d40-650b-4716-bff6-f65445713c59"
+            },
+            "target": {
+              "cell": "cc60c85d-caf8-4847-b556-e3094b871971",
+              "port": "b8149ffe-773e-4379-80de-b161247102b9"
+            },
+            "vertices": [
+              {
+                "x": 690,
+                "y": 190
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "71f14d9c-416a-4446-8395-37beea71a287",
+            "source": {
+              "cell": "cc60c85d-caf8-4847-b556-e3094b871971",
+              "port": "b8149ffe-773e-4379-80de-b161247102b9"
+            },
+            "target": {
+              "cell": "00fd6d40-650b-4716-bff6-f65445713c59",
+              "port": "289ff83a-ca8d-4c4a-bdc4-f430f36cf30a"
+            },
+            "vertices": [
+              {
+                "x": 690,
+                "y": 260
+              }
+            ]
+          },
+          {
             "position": {
-              "x": 1070,
-              "y": 190
+              "x": 1200,
+              "y": 200
             },
             "size": {
               "width": 120,
@@ -1684,8 +1783,8 @@
           },
           {
             "position": {
-              "x": 668,
-              "y": 282
+              "x": 978,
+              "y": 200
             },
             "size": {
               "width": 60,
@@ -1803,8 +1902,8 @@
           },
           {
             "position": {
-              "x": 820,
-              "y": 212
+              "x": 890,
+              "y": 436
             },
             "size": {
               "width": 112.5,
@@ -1937,7 +2036,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Auth Response",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1949,7 +2048,7 @@
               "threats": []
             },
             "labels": [
-              "Data Flow"
+              "Auth Response"
             ],
             "id": "401549a3-14fa-4085-933d-14bd846be2ad",
             "source": {
@@ -1959,7 +2058,13 @@
             "target": {
               "cell": "d1752d6d-0baa-4123-ac6e-9490bd0f4380",
               "port": "289ff83a-ca8d-4c4a-bdc4-f430f36cf30a"
-            }
+            },
+            "vertices": [
+              {
+                "x": 810,
+                "y": 120
+              }
+            ]
           }
         ],
         "description": "A Threat Overvieew"

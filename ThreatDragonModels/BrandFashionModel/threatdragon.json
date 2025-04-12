@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "title": "BerandaFashion E-Commerce Threat Model",
+    "owner": "Dev Team",
+    "description": "Threat model for BerandaFashion's e-commerce web application based on STRIDE.",
+    "date": "2025-04-12",
+    "reviewer": "Security Analyst"
+  },
+  "detail": {
+    "diagrams": [
+      {
+        "title": "E-Commerce Threat Model",
+        "diagramType": "DFD",
+        "elements": [
+          {
+            "id": "e1",
+            "name": "Pelanggan",
+            "type": "External",
+            "outOfScope": false
+          },
+          {
+            "id": "e2",
+            "name": "Admin",
+            "type": "External",
+            "outOfScope": false
+          },
+          {
+            "id": "e3",
+            "name": "Payment Gateway",
+            "type": "External",
+            "outOfScope": true
+          },
+          {
+            "id": "e4",
+            "name": "Ekspedisi",
+            "type": "External",
+            "outOfScope": true
+          },
+          {
+            "id": "p1",
+            "name": "Login & Auth",
+            "type": "Process",
+            "outOfScope": false
+          },
+          {
+            "id": "p2",
+            "name": "Checkout & Payment",
+            "type": "Process",
+            "outOfScope": false
+          },
+          {
+            "id": "p3",
+            "name": "Manajemen Stok",
+            "type": "Process",
+            "outOfScope": false
+          },
+          {
+            "id": "p4",
+            "name": "Chat & Ulasan",
+            "type": "Process",
+            "outOfScope": false
+          },
+          {
+            "id": "p5",
+            "name": "Dashboard Admin",
+            "type": "Process",
+            "outOfScope": false
+          },
+          {
+            "id": "p6",
+            "name": "Integrasi Ekspedisi",
+            "type": "Process",
+            "outOfScope": false
+          },
+          {
+            "id": "d1",
+            "name": "Database Pengguna",
+            "type": "Store",
+            "outOfScope": false
+          },
+          {
+            "id": "d2",
+            "name": "Database Transaksi",
+            "type": "Store",
+            "outOfScope": false
+          },
+          {
+            "id": "d3",
+            "name": "Database Produk",
+            "type": "Store",
+            "outOfScope": false
+          }
+        ],
+        "flows": [
+          {
+            "source": "e1",
+            "target": "p1",
+            "name": "Kredensial"
+          },
+          {
+            "source": "p1",
+            "target": "d1",
+            "name": "Verifikasi Pengguna"
+          },
+          {
+            "source": "e1",
+            "target": "p2",
+            "name": "Checkout"
+          },
+          {
+            "source": "p2",
+            "target": "e3",
+            "name": "Pembayaran"
+          },
+          {
+            "source": "p2",
+            "target": "d2",
+            "name": "Simpan Transaksi"
+          },
+          {
+            "source": "p2",
+            "target": "p6",
+            "name": "Permintaan Pengiriman"
+          },
+          {
+            "source": "p6",
+            "target": "e4",
+            "name": "Data Pengiriman"
+          },
+          {
+            "source": "e2",
+            "target": "p5",
+            "name": "Login Admin"
+          },
+          {
+            "source": "p5",
+            "target": "d3",
+            "name": "Kelola Produk"
+          },
+          {
+            "source": "p5",
+            "target": "d2",
+            "name": "Laporan Penjualan"
+          },
+          {
+            "source": "e1",
+            "target": "p4",
+            "name": "Ulasan Produk"
+          },
+          {
+            "source": "p4",
+            "target": "d1",
+            "name": "Simpan Ulasan"
+          }
+        ]
+      }
+    ]
+  }
+}

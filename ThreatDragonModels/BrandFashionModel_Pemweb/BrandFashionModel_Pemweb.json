@@ -3,7 +3,7 @@
   "summary": {
     "title": "BerandaFashion E-Commerce Threat Model",
     "owner": "BerandaFashion Dev Team",
-    "description": "This threat model identifies security risks in the BerandaFashion e-commerce platform, covering user interactions, payment flows, and admin functionalities.",
+    "description": "Threat model for BerandaFashion's e-commerce web platform. Includes STRIDE analysis across customer, admin, and system components.",
     "id": 0
   },
   "detail": {
@@ -11,208 +11,187 @@
     "diagrams": [
       {
         "id": 0,
-        "title": "Main E-Commerce Flow",
+        "title": "BerandaFashion STRIDE Diagram",
         "diagramType": "STRIDE",
-        "placeholder": "STRIDE diagram for BerandaFashion",
+        "placeholder": "BerandaFashion STRIDE threat model",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.4.1",
         "cells": [
           {
-            "position": { "x": 200, "y": 150 },
-            "size": { "width": 120, "height": 60 },
-            "attrs": { "text": { "text": "Customer" } },
-            "shape": "actor",
-            "id": "customer",
+            "shape": "flow",
+            "id": "flow-1",
+            "source": { "cell": "ee0da587-1269-4d4e-8402-f9c39b2bc5ef" }, 
+            "target": { "cell": "7d947912-7a70-4dcb-91d7-b91a725346af" }, 
+            "labels": ["Login Request"],
             "data": {
-              "type": "tm.Actor",
-              "name": "Customer",
+              "type": "tm.Flow",
+              "name": "Login Request",
               "threats": [
                 {
                   "id": "threat-1",
-                  "title": "Credential Theft (Phishing)",
+                  "title": "Credential Theft (Phishing/Brute Force)",
                   "status": "Mitigated",
                   "severity": "High",
                   "type": "Spoofing",
-                  "description": "Attackers steal login credentials via phishing.",
-                  "mitigation": "Implement MFA and CAPTCHA."
+                  "description": "Attackers steal credentials via phishing or brute force.",
+                  "mitigation": "MFA, rate limiting, CAPTCHA."
                 }
               ]
             }
           },
           {
-            "position": { "x": 200, "y": 400 },
-            "size": { "width": 120, "height": 60 },
-            "attrs": { "text": { "text": "Admin" } },
-            "shape": "actor",
-            "id": "admin",
+            "shape": "flow",
+            "id": "flow-2",
+            "source": { "cell": "7d947912-7a70-4dcb-91d7-b91a725346af" }, 
+            "target": { "cell": "f66bff25-245e-459c-8152-e6bdaa40725a" }, 
+            "labels": ["Validate Credentials"],
             "data": {
-              "type": "tm.Actor",
-              "name": "Admin",
+              "type": "tm.Flow",
+              "name": "Validate Credentials",
+              "isEncrypted": true,
               "threats": [
                 {
                   "id": "threat-2",
-                  "title": "Privilege Escalation",
-                  "status": "Mitigated",
-                  "severity": "Medium",
-                  "type": "Elevation of Privilege",
-                  "description": "Unauthorized access to admin functions.",
-                  "mitigation": "Role-based access control (RBAC)."
-                }
-              ]
-            }
-          },
-  
-          {
-            "position": { "x": 500, "y": 150 },
-            "size": { "width": 150, "height": 100 },
-            "attrs": { "text": { "text": "E-Commerce Platform" } },
-            "shape": "process",
-            "id": "ecom-platform",
-            "data": {
-              "type": "tm.Process",
-              "name": "E-Commerce Platform",
-              "threats": [
-                {
-                  "id": "threat-3",
                   "title": "SQL Injection",
                   "status": "Mitigated",
                   "severity": "High",
                   "type": "Tampering",
-                  "description": "Malicious SQL queries targeting product DB.",
-                  "mitigation": "Use prepared statements and WAF."
+                  "description": "Malicious SQL queries targeting user DB.",
+                  "mitigation": "Prepared statements, ORM."
                 }
               ]
             }
           },
           {
-            "position": { "x": 500, "y": 400 },
-            "size": { "width": 150, "height": 100 },
-            "attrs": { "text": { "text": "Admin Dashboard" } },
-            "shape": "process",
-            "id": "admin-dashboard",
+            "shape": "flow",
+            "id": "flow-3",
+            "source": { "cell": "ee0da587-1269-4d4e-8402-f9c39b2bc5ef" }, 
+            "target": { "cell": "7aa38915-3c07-4168-8f82-7562b72f7985" }, 
+            "labels": ["Payment Request"],
             "data": {
-              "type": "tm.Process",
-              "name": "Admin Dashboard",
+              "type": "tm.Flow",
+              "name": "Payment Request",
+              "threats": [
+                {
+                  "id": "threat-3",
+                  "title": "MITM Attack",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Intercepted payment data.",
+                  "mitigation": "TLS (HTTPS), HSTS."
+                }
+              ]
+            }
+          },
+          {
+            "shape": "flow",
+            "id": "flow-4",
+            "source": { "cell": "7aa38915-3c07-4168-8f82-7562b72f7985" }, 
+            "target": { "cell": "34816969-6205-4656-8dfc-7ae575174ddc" },
+            "labels": ["Process Payment"],
+            "data": {
+              "type": "tm.Flow",
+              "name": "Process Payment",
+              "isEncrypted": true,
               "threats": [
                 {
                   "id": "threat-4",
-                  "title": "CSRF Attacks",
+                  "title": "Payment Tampering",
                   "status": "Mitigated",
-                  "severity": "Medium",
-                  "type": "Spoofing",
-                  "description": "Unauthorized actions via admin session.",
-                  "mitigation": "Anti-CSRF tokens."
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Altered transaction amounts/recipients.",
+                  "mitigation": "Digital signatures, HMAC."
                 }
               ]
             }
           },
-        
           {
-            "position": { "x": 800, "y": 150 },
-            "size": { "width": 120, "height": 60 },
-            "attrs": { "text": { "text": "Product DB" } },
-            "shape": "store",
-            "id": "product-db",
+            "shape": "flow",
+            "id": "flow-5",
+            "source": { "cell": "3155cae6-ab61-40c5-b215-cd7d0bf0f3f0" }, 
+            "target": { "cell": "40faa519-1914-469d-b64c-4f0458839906" }, 
+            "labels": ["Update Inventory"],
             "data": {
-              "type": "tm.Store",
-              "name": "Product Database",
+              "type": "tm.Flow",
+              "name": "Update Inventory",
               "threats": [
                 {
                   "id": "threat-5",
+                  "title": "Unauthorized Inventory Changes",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Elevation of Privilege",
+                  "description": "Non-admin users modify stock.",
+                  "mitigation": "RBAC, audit logs."
+                }
+              ]
+            }
+          },
+          {
+            "shape": "flow",
+            "id": "flow-6",
+            "source": { "cell": "40faa519-1914-469d-b64c-4f0458839906" }, 
+            "target": { "cell": "54550ef3-fb1b-4c8d-a344-40ff70c71291" }, 
+            "labels": ["Sync Stock Data"],
+            "data": {
+              "type": "tm.Flow",
+              "name": "Sync Stock Data",
+              "isEncrypted": true
+            }
+          },
+          {
+            "shape": "flow",
+            "id": "flow-7",
+            "source": { "cell": "34816969-6205-4656-8dfc-7ae575174ddc" }, 
+            "target": { "cell": "898262f8-ede4-46a8-8051-d5a3f7208e19" }, 
+            "labels": ["Record Transaction"],
+            "data": {
+              "type": "tm.Flow",
+              "name": "Record Transaction",
+              "isEncrypted": true,
+              "threats": [
+                {
+                  "id": "threat-6",
                   "title": "Data Breach",
                   "status": "Mitigated",
                   "severity": "High",
                   "type": "Information Disclosure",
-                  "description": "Sensitive data exposure.",
+                  "description": "Exposed transaction records.",
                   "mitigation": "Encryption at rest."
                 }
               ]
             }
           },
           {
-            "position": { "x": 800, "y": 400 },
-            "size": { "width": 120, "height": 60 },
-            "attrs": { "text": { "text": "Order DB" } },
-            "shape": "store",
-            "id": "order-db",
-            "data": {
-              "type": "tm.Store",
-              "name": "Order Database",
-              "threats": [
-                {
-                  "id": "threat-6",
-                  "title": "Order Tampering",
-                  "status": "Mitigated",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "description": "Unauthorized order modifications.",
-                  "mitigation": "Audit logs and integrity checks."
-                }
-              ]
-            }
-          },
-          {
             "shape": "flow",
-            "source": { "cell": "customer", "port": "right" },
-            "target": { "cell": "ecom-platform", "port": "left" },
-            "labels": ["Browse Products / Checkout"],
-            "id": "flow-1",
+            "id": "flow-8",
+            "source": { "cell": "4e6b13e9-2235-4d2a-9a42-f9794964541c" },
+            "target": { "cell": "e48320a6-6371-4ca3-bb93-29a4b843344c" }, 
+            "labels": ["Shipping Request"],
             "data": {
               "type": "tm.Flow",
-              "name": "User Requests",
+              "name": "Shipping Request",
               "threats": [
                 {
                   "id": "threat-7",
-                  "title": "MITM Attack",
-                  "status": "Mitigated",
-                  "severity": "High",
-                  "type": "Tampering",
-                  "description": "Intercepted HTTP requests.",
-                  "mitigation": "Enforce HTTPS/HSTS."
-                }
-              ]
-            }
-          },
-          {
-            "shape": "flow",
-            "source": { "cell": "ecom-platform", "port": "right" },
-            "target": { "cell": "product-db", "port": "left" },
-            "labels": ["Query Products"],
-            "id": "flow-2",
-            "data": {
-              "type": "tm.Flow",
-              "name": "DB Query",
-              "isEncrypted": true
-            }
-          },
-          {
-            "shape": "flow",
-            "source": { "cell": "admin", "port": "right" },
-            "target": { "cell": "admin-dashboard", "port": "left" },
-            "labels": ["Manage Products/Orders"],
-            "id": "flow-3",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Admin Actions",
-              "threats": [
-                {
-                  "id": "threat-8",
-                  "title": "Session Hijacking",
+                  "title": "Fake Shipping Updates",
                   "status": "Mitigated",
                   "severity": "Medium",
-                  "type": "Spoofing",
-                  "description": "Stolen admin session cookies.",
-                  "mitigation": "Secure cookies (HttpOnly, SameSite)."
+                  "type": "Repudiation",
+                  "description": "False delivery status reports.",
+                  "mitigation": "API signing, logs."
                 }
               ]
             }
           }
         ],
-        "description": "STRIDE model for BerandaFashion e-commerce platform."
+        "description": "STRIDE threat map for BerandaFashion's e-commerce application"
       }
     ],
-    "diagramTop": 0,
-    "reviewer": "Security Team",
+    "diagramTop": 3,
+    "reviewer": "Cyber Security Engineer",
     "threatTop": 8
   }
 }

@@ -846,8 +846,8 @@
           },
           {
             "position": {
-              "x": 1200,
-              "y": 476
+              "x": 1300,
+              "y": 446
             },
             "size": {
               "width": 120,
@@ -1088,8 +1088,8 @@
           },
           {
             "position": {
-              "x": 1200,
-              "y": 65
+              "x": 1320,
+              "y": 60
             },
             "size": {
               "width": 120,
@@ -1628,6 +1628,156 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
+              "name": "Respon Pembayaran",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Permintaan Pembayaran"
+            ],
+            "id": "71f14d9c-416a-4446-8395-37beea71a287",
+            "source": {
+              "cell": "cc60c85d-caf8-4847-b556-e3094b871971",
+              "port": "b8149ffe-773e-4379-80de-b161247102b9"
+            },
+            "target": {
+              "cell": "00fd6d40-650b-4716-bff6-f65445713c59",
+              "port": "289ff83a-ca8d-4c4a-bdc4-f430f36cf30a"
+            },
+            "vertices": [
+              {
+                "x": 700,
+                "y": 260
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Simpan Data Transaksi",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Simpan Data Transaksi"
+            ],
+            "id": "34301f62-3c9d-4f3d-8535-a86d5d2e2e97",
+            "source": {
+              "cell": "cc60c85d-caf8-4847-b556-e3094b871971",
+              "port": "289ff83a-ca8d-4c4a-bdc4-f430f36cf30a"
+            },
+            "target": {
+              "cell": "6b3b0d44-d676-49de-aec1-be4359ac5c17",
+              "port": "60a0cc3d-a788-4986-9eb9-ad0cc00b4bb6"
+            },
+            "vertices": [
+              {
+                "x": 1040,
+                "y": 200
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Permintaan Pengiriman",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Permintaan Pengiriman"
+            ],
+            "id": "c9cabf61-df1f-4a56-91d1-bea3e469cfc5",
+            "source": {
+              "cell": "cc60c85d-caf8-4847-b556-e3094b871971",
+              "port": "c22627a1-9f65-4e02-a519-eb271b56f1d6"
+            },
+            "target": {
+              "cell": "69dd5c88-11e0-4dd9-ac12-4ab00e3a57bc",
+              "port": "b8149ffe-773e-4379-80de-b161247102b9"
+            },
+            "vertices": [
+              {
+                "x": 930,
+                "y": 280
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
               "name": "Data Flow",
               "description": "",
               "outOfScope": false,
@@ -1642,26 +1792,75 @@
             "labels": [
               "Data Flow"
             ],
-            "id": "71f14d9c-416a-4446-8395-37beea71a287",
+            "id": "59d81dfb-6df2-4480-94cd-daebd5e2789c",
             "source": {
-              "cell": "cc60c85d-caf8-4847-b556-e3094b871971",
-              "port": "b8149ffe-773e-4379-80de-b161247102b9"
+              "cell": "69dd5c88-11e0-4dd9-ac12-4ab00e3a57bc"
             },
             "target": {
-              "cell": "00fd6d40-650b-4716-bff6-f65445713c59",
-              "port": "289ff83a-ca8d-4c4a-bdc4-f430f36cf30a"
+              "cell": "cee4da34-412c-4aeb-beed-0e44c895548e",
+              "port": "9e177216-db7c-4c22-bfe6-92dd738e9ab0"
             },
             "vertices": [
               {
-                "x": 690,
-                "y": 260
+                "x": 1090,
+                "y": 360
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Respon Pengiriman",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Respon Pengiriman"
+            ],
+            "id": "e9c21ca5-85d2-4bc8-9c13-d2d3bbc87767",
+            "source": {
+              "cell": "69dd5c88-11e0-4dd9-ac12-4ab00e3a57bc",
+              "port": "c22627a1-9f65-4e02-a519-eb271b56f1d6"
+            },
+            "target": {
+              "cell": "cc60c85d-caf8-4847-b556-e3094b871971",
+              "port": "c22627a1-9f65-4e02-a519-eb271b56f1d6"
+            },
+            "vertices": [
+              {
+                "x": 858,
+                "y": 350
               }
             ]
           },
           {
             "position": {
-              "x": 1200,
-              "y": 200
+              "x": 1310,
+              "y": 180
             },
             "size": {
               "width": 120,
@@ -1783,16 +1982,16 @@
           },
           {
             "position": {
-              "x": 978,
-              "y": 200
+              "x": 980,
+              "y": 320
             },
             "size": {
-              "width": 60,
-              "height": 60
+              "width": 80,
+              "height": 80
             },
             "attrs": {
               "text": {
-                "text": "Integrasi Ekspediksi"
+                "text": "Integrasi \nEkspediksi"
               },
               "body": {
                 "stroke": "#333333",
@@ -1888,7 +2087,7 @@
             "id": "69dd5c88-11e0-4dd9-ac12-4ab00e3a57bc",
             "data": {
               "type": "tm.Process",
-              "name": "Integrasi Ekspediksi",
+              "name": "Integrasi \nEkspediksi",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -1902,8 +2101,8 @@
           },
           {
             "position": {
-              "x": 890,
-              "y": 436
+              "x": 1150,
+              "y": 330
             },
             "size": {
               "width": 112.5,

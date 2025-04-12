@@ -31,8 +31,8 @@
                 "text": "Login \n&\n Auth"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -128,18 +128,60 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "e4a2d136-e82b-4e40-8dd3-76b77be936ea",
+                  "title": "Information Leak",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Leak of user credentials",
+                  "mitigation": "TLS, secure password storage",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                },
+                {
+                  "id": "7ad6a353-8b2b-4f57-9a59-fd3afffe63d0",
+                  "title": "Access Control Hijack",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Credential injection, brute force",
+                  "mitigation": "Rate-limiting, password hashing, CAPTCHA",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
             "position": {
-              "x": 170,
-              "y": 152
+              "x": -20,
+              "y": 170
             },
             "size": {
               "width": 112.5,
@@ -249,13 +291,44 @@
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "e89b1da6-6905-4476-9ddb-e749f4a86829",
+                  "title": "User Impersonation",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "User impersonates another (account takeover)",
+                  "mitigation": "MFA, session management, secure login",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                },
+                {
+                  "id": "3ca32af0-5c23-4bca-8173-1755928dcb94",
+                  "title": "Repudiation",
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Denying actions like purchases",
+                  "mitigation": "Activity logging, transaction receipts",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 1
+              }
             }
           },
           {
             "position": {
-              "x": 180,
-              "y": 436
+              "x": -20,
+              "y": 410
             },
             "size": {
               "width": 112.5,
@@ -365,7 +438,25 @@
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "87eb4611-98b1-4fb6-b8d5-2ba563979174",
+                  "title": "Priviliege Escalation",
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Compromising admin credentials",
+                  "mitigation": "RBAC, MFA",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -489,127 +580,8 @@
           },
           {
             "position": {
-              "x": 638,
-              "y": 320
-            },
-            "size": {
-              "width": 60,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "Manajemen \nStock"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "zIndex": 5,
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "e58e68b2-dcad-4607-936d-e47d92e29ce5"
-                },
-                {
-                  "group": "right",
-                  "id": "289ff83a-ca8d-4c4a-bdc4-f430f36cf30a"
-                },
-                {
-                  "group": "bottom",
-                  "id": "c22627a1-9f65-4e02-a519-eb271b56f1d6"
-                },
-                {
-                  "group": "left",
-                  "id": "b8149ffe-773e-4379-80de-b161247102b9"
-                }
-              ]
-            },
-            "id": "e6ace605-558a-4fbf-9875-ca4e2ed7312b",
-            "data": {
-              "type": "tm.Process",
-              "name": "Manajemen \nStock",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 628,
-              "y": 390
+              "x": 708,
+              "y": 410
             },
             "size": {
               "width": 60,
@@ -846,7 +818,7 @@
           },
           {
             "position": {
-              "x": 1430,
+              "x": 1690,
               "y": 470
             },
             "size": {
@@ -1088,8 +1060,8 @@
           },
           {
             "position": {
-              "x": 1400,
-              "y": 50
+              "x": 1690,
+              "y": 65
             },
             "size": {
               "width": 120,
@@ -1603,8 +1575,8 @@
             },
             "vertices": [
               {
-                "x": 690,
-                "y": 190
+                "x": 700,
+                "y": 210
               }
             ]
           },
@@ -1909,17 +1881,7 @@
                 "x": 1000,
                 "y": 500
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "shape": "flow",
@@ -2171,8 +2133,8 @@
           },
           {
             "position": {
-              "x": 1400,
-              "y": 170
+              "x": 1460,
+              "y": 190.00000000000003
             },
             "size": {
               "width": 120,
@@ -2627,6 +2589,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Cyber Security Engineer`",
-    "threatTop": 0
+    "threatTop": 6
   }
 }

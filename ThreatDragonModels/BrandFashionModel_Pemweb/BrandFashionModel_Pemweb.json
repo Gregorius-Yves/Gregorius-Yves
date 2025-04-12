@@ -17,7 +17,6 @@
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.4.1",
         "cells": [
-          // Actors
           {
             "position": { "x": 200, "y": 150 },
             "size": { "width": 120, "height": 60 },
@@ -152,7 +151,6 @@
               ]
             }
           },
-          // Flows
           {
             "shape": "flow",
             "source": { "cell": "customer", "port": "right" },

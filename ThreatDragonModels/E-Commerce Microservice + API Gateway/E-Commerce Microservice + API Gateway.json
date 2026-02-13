@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": 640,
-              "y": 210
+              "x": 580,
+              "y": 300
             },
             "size": {
               "width": 60,
@@ -140,7 +140,7 @@
               "y": 300
             },
             "size": {
-              "width": 112.5,
+              "width": 130,
               "height": 60
             },
             "attrs": {
@@ -271,7 +271,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "HTTPS Connection",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -285,17 +285,23 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "HTTPS Connection"
             ],
             "id": "64f20c9f-688f-4b8d-ab99-01a9e7946f06",
             "source": {
-              "x": 330,
-              "y": 320
+              "cell": "40d0d8b1-c9a6-4aad-8b1e-29b0911a3864",
+              "port": "6aa7f86f-a4ba-44bc-94af-34b295e8089f"
             },
             "target": {
-              "x": 430,
-              "y": 420
-            }
+              "cell": "245c4fcd-4758-4b32-94a0-4ea968cdf2f9",
+              "port": "92ac6bef-d106-47bb-88c3-a78ec6dcf5b3"
+            },
+            "vertices": [
+              {
+                "x": 500,
+                "y": 300
+              }
+            ]
           }
         ]
       },

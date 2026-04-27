@@ -10,7 +10,7 @@ Amateur Bug Hunter<br>Current Undergraduate at Brawijaya University
 # 📊 GitHub Stats:
 ![](http://103.52.115.207:9000/api?username=Gregorius-Yves&theme=shadow_green&hide_border=false&include_all_commits=true&count_private=true)<br/>
 ![](https://streak-stats.demolab.com?user=Gregorius-Yves&theme=shadow_green)<br/>
-![]([http://103.52.115.207:9000/api/top-langs/?username=Gregorius-Yves&theme=shadow_green&hide_border=false&include_all_commits=false&count_private=false&layout=compact](http://103.52.115.207:9000/api/top-langs/?username=Gregorius-Yves&theme=shadow_green&hide_border=false&include_all_commits=false&count_private=false&layout=compact&exclude_repo=PBO-Gaming-TIF-A23,proyek-akhir-basdat,PetramaxOplosan_projectweb_Pewmeb-C,tugas-pemweb-c-1))
+![](http://103.52.115.207:9000/api/top-langs/?username=Gregorius-Yves&theme=shadow_green&hide_border=false&include_all_commits=false&count_private=false&layout=compact&exclude_repo=PBO-Gaming-TIF-A23,proyek-akhir-basdat,PetramaxOplosan_projectweb_Pewmeb-C,tugas-pemweb-c-1) 
 
 ---
 [![](https://visitcount.itsvg.in/api?id=Gregorius-Yves&icon=0&color=0)](https://visitcount.itsvg.in)
